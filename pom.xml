@@ -93,7 +93,7 @@
           <protocArtifact>com.google.protobuf:protoc:${protoc.version}:exe:${os.classifier}</protocArtifact>
           <pluginId>grpc-java</pluginId>
           <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.classifier}</pluginArtifact>
-          <outputBaseDirectory>${project.basedir}\src\main</outputBaseDirectory>
+          <outputBaseDirectory>${project.basedir}/src/main</outputBaseDirectory>
         </configuration>
         <executions>
           <execution>

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/struct.proto";
+
+package com.siemens.datalayer;
+
+option java_multiple_files = true;
+option java_package = "com.siemens.datalayer.realtime.rpc.api";
+
+service EndPoint {
+  rpc Read (google.protobuf.Empty) returns (stream google.protobuf.Struct) {
+  }
+  rpc Write (stream google.protobuf.Struct) returns (google.protobuf.Empty){
+  }
+}
